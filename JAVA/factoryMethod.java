@@ -67,7 +67,7 @@ class DocumentFactory {
 
 public class Main {
     public static void main(String[] args) {
-        String filePath = "example.pdf";
+        String filePath = "example.pdf"; // actual path to file you want to convert
         
         DocumentFactory factory = new DocumentFactory();
         Document document = factory.createDocument(filePath);
