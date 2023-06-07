@@ -21,6 +21,7 @@ interface Document {
     String convertToPlainText();
 }
 
+// Implements is a Java keyowrd that inidcates that a class is going to implement an interface
 class PDFDocument implements Document {
     public String convertToPlainText() {
         // Conversion logic for PDF document
