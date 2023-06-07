@@ -17,6 +17,10 @@ detection logic to determine the appropriate document type to instantiate.
 
 Here's an example code snippet to illustrate this:
 */
+
+
+// In Java, an interface is a blueprint of a class that defines a set of methods that must be implemented by any class that claims 
+// to implement that interface. It establishes a contract or an agreement for classes to adhere to.
 interface Document {
     String convertToPlainText();
 }
@@ -57,6 +61,24 @@ class DocumentFactory {
         }
     }
 }
+
+
+///////////////////If calling in Main///////////////////
+
+public class Main {
+    public static void main(String[] args) {
+        String filePath = "example.pdf";
+        
+        DocumentFactory factory = new DocumentFactory();
+        Document document = factory.createDocument(filePath);
+        
+        String plainText = document.convertToPlainText();
+        System.out.println(plainText);
+    }
+}
+
+
+
 /*
 
 In the above example, the `DocumentFactory` acts as the factory for creating different `Document` objects based on the file format. 
