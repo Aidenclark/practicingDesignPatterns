@@ -40,7 +40,7 @@ print(plainText)
 '''
 In Python, we don't have the concept of explicit interfaces like in Java. Instead, we define the base class `Document` 
 with a `convertToPlainText()` method that raises a `NotImplementedError`. This acts as a placeholder that must be 
-implemented by the subclasses.
+implemented by the subclasses. (This is similar to JavaScript as well)
 
 The subclasses `PDFDocument`, `DOCXDocument`, and `TXTDocument` inherit from the `Document` base class and provide 
 their own implementations of the `convertToPlainText()` method.
