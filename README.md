@@ -8,4 +8,4 @@ They are blueprints that can be taken and customized to solve a particular desig
 
 | Type | Title | Explanation | Solution | 
 |---| ----- | -------- | -------- |
-|Creational Pattern|[Factory Method](https://refactoring.guru/design-patterns/factory-method) | | [Python](./python/twoSum.py), [JAVA](./JAVA/twoSum.java), [JavaScript](./JavaScript/twoSum.js), [C#](./C%23/twoSum.cs)|
+|Creational Pattern|[Factory Method](https://refactoring.guru/design-patterns/factory-method) |[House Factory](./Explanations/House Factory.md) | [Python](./python/twoSum.py), [JAVA](./JAVA/twoSum.java), [JavaScript](./JavaScript/twoSum.js), [C#](./C%23/twoSum.cs)|
