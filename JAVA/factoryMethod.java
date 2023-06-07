@@ -1,4 +1,5 @@
-Sure! Let's consider a real-life example of a document converter application. This application needs to convert documents from various formats (such as PDF, DOCX, and TXT) into a common format, such as plain text.
+Sure! Let's consider a real-life example of a document converter application. This application needs to convert documents 
+from various formats (such as PDF, DOCX, and TXT) into a common format, such as plain text.
 
 To implement this functionality using the Factory Method pattern, we can define an abstract class or interface called `Document` that represents the common interface for all documents. This class can have a method like `convertToPlainText()` that converts the document into plain text.
 
