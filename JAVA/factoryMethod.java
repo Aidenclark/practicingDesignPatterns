@@ -65,3 +65,6 @@ document type is created or converted to plain text.
 This way, you can easily add support for new document formats in the future by creating a new concrete class that implements the `Document` 
 interface and adding the corresponding logic in the `DocumentFactory`. The client code remains unchanged, as it interacts with the `Document` 
 objects through the common interface.
+
+
+*/
