@@ -20,7 +20,6 @@ Here's an example code snippet to illustrate this:
 */
 
 
-// In Java, an interface is a blueprint of a class that defines a set of methods that must be implemented by any class that claims 
 // to implement that interface. It establishes a contract or an agreement for classes to adhere to.
 
 interface Document
