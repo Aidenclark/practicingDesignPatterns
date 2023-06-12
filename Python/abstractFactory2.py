@@ -70,3 +70,10 @@ if __name__ == '__main__':
 
     factory2 = ConcreteFactory2()
     client_code(factory2)
+
+    
+    
+    
+    
+    
+    
