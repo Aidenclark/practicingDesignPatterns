@@ -14,56 +14,69 @@ construction process is flexible, allowing you to customize and vary the buildin
 
 '''
 
+'''
+The House class represents a house and stores the values for its foundation, walls, roof, windows, and doors. 
+The __str__ method returns a string representation of the house.
+'''
+
+
 class House:
     def __init__(self):
-        self.foundation = None
-        self.walls = None
-        self.roof = None
-        self.windows = None
-        self.doors = None
+        self.foundation = None  # Represents the foundation of the house
+        self.walls = None  # Represents the walls of the house
+        self.roof = None  # Represents the roof of the house
+        self.windows = None  # Represents the windows of the house
+        self.doors = None  # Represents the doors of the house
 
     def __str__(self):
         return f"Foundation: {self.foundation}, Walls: {self.walls}, Roof: {self.roof}, Windows: {self.windows}, Doors: {self.doors}"
-
+'''
+The HouseBuilder class is an abstract class that provides a blueprint for building a house.
+It initializes an instance of House to represent the house being built.
+The build_foundation, build_walls, build_roof, build_windows, and build_doors methods are placeholders that need to be implemented in subclasses to define how to build each part of the house.
+The get_house method returns the built house.
+'''
 
 class HouseBuilder:
     def __init__(self):
-        self.house = House()
+        self.house = House()  # Represents the house being built
 
     def build_foundation(self):
-        pass
+        pass  # Placeholder method to build the foundation
 
     def build_walls(self):
-        pass
+        pass  # Placeholder method to build the walls
 
     def build_roof(self):
-        pass
+        pass  # Placeholder method to build the roof
 
     def build_windows(self):
-        pass
+        pass  # Placeholder method to build the windows
 
     def build_doors(self):
-        pass
+        pass  # Placeholder method to build the doors
 
     def get_house(self):
-        return self.house
-
-
+        return self.house  # Returns the built house
+''''
+The BasicHouseBuilder class is a subclass of HouseBuilder and provides the implementation to build a basic house.
+It overrides the placeholder methods to define how to build each part of a basic house.
+''''
 class BasicHouseBuilder(HouseBuilder):
     def build_foundation(self):
-        self.house.foundation = "Basic foundation"
+        self.house.foundation = "Basic foundation"  # Builds a basic foundation
 
     def build_walls(self):
-        self.house.walls = "Basic walls"
+        self.house.walls = "Basic walls"  # Builds basic walls
 
     def build_roof(self):
-        self.house.roof = "Basic roof"
+        self.house.roof = "Basic roof"  # Builds a basic roof
 
     def build_windows(self):
-        self.house.windows = "Basic windows"
+        self.house.windows = "Basic windows"  # Builds basic windows
 
     def build_doors(self):
-        self.house.doors = "Basic doors"
+        self.house.doors = "Basic doors"  # Builds basic doors
 
 
 class FancyHouseBuilder(HouseBuilder):
@@ -82,17 +95,21 @@ class FancyHouseBuilder(HouseBuilder):
     def build_doors(self):
         self.house.doors = "Fancy doors"
 
-
+'''
+The HouseDirector class is responsible for constructing a house using a specific builder.
+It takes a builder as a parameter in the constructor to specify which builder to use.
+The construct_house method orchestrates the construction process by calling the builder's methods in the appropriate order.
+'''
 class HouseDirector:
     def __init__(self, builder):
-        self.builder = builder
+        self.builder = builder  # Represents the builder to use
 
     def construct_house(self):
-        self.builder.build_foundation()
-        self.builder.build_walls()
-        self.builder.build_roof()
-        self.builder.build_windows()
-        self.builder.build_doors()
+        self.builder.build_foundation()  # Builds the foundation
+        self.builder.build_walls()  # Builds the walls
+        self.builder.build_roof()  # Builds the roof
+        self.builder.build_windows()  # Builds the windows
+        self.builder.build_doors()  # Builds the doors
 
 
 # Usage
