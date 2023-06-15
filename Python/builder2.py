@@ -110,3 +110,24 @@ director.construct_house()
 fancy_house = fancy_builder.get_house()
 print("Fancy House:")
 print(fancy_house)
+
+
+'''
+When defining a method inside a class, the first parameter of the method is typically self. This parameter is automatically passed when you call a method 
+on an instance of the class. By convention, self is used as the name for this parameter, but you can technically choose any valid variable name.
+
+The self parameter allows you to access and manipulate the attributes of the instance from within its methods. It provides a way to maintain the state of 
+the object and perform actions related to that instance.
+
+
+---
+
+
+In Python, the pass statement is a placeholder that does nothing. It is used when a statement is syntactically required but you don't want to perform any 
+actions or add any code at that point.
+
+In the context of the Builder design pattern code example provided earlier, pass is used as a placeholder within the build_* methods of the HouseBuilder 
+and its subclasses. The intention is to indicate that these methods should be implemented in the subclasses with the specific building logic for each part 
+of the house
+
+'''
